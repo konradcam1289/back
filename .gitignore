@@ -1,0 +1,43 @@
+# Pliki konfiguracyjne
+.env
+# Konfiguracje lokalne
+src/main/resources/application.properties
+
+# Maven i target
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse / Spring Tool Suite
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+# Systemowe
+.DS_Store
+Thumbs.db
+
+# Logi
+*.log
+
