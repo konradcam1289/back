@@ -44,6 +44,9 @@ public class JwtSecurityConfig {
                         .requestMatchers("/admin/**").hasAuthority("ROLE_ADMIN")
                         .requestMatchers("/worker/**").hasAuthority("ROLE_WORKER")
                         .requestMatchers("/client/**").hasAuthority("ROLE_CLIENT")
+                        .requestMatchers("/api/contact").permitAll()
+                        .requestMatchers("/api/services/**").permitAll()
+                        .requestMatchers("/api/services/**").permitAll()
 
                         .anyRequest().authenticated()
                 )
@@ -51,6 +54,9 @@ public class JwtSecurityConfig {
 
         return http.build();
     }
+
+
+
 
     @Bean
     public AuthenticationManager authenticationManager() {
